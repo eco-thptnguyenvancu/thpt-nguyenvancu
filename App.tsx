@@ -179,7 +179,7 @@ const DonationModal: React.FC<DonationModalProps> = ({ onClose, onSubmit }) => {
               onChange={(e) => setMessage(e.target.value)}
             />
           </div>
-          <div className="flex gap-4 items-stretch h-screen">
+          <div className="flex gap-4">
             <button onClick={onClose} className="flex-1 px-4 py-3 border-2 border-gray-200 rounded-xl hover:bg-gray-50 font-bold text-gray-500">Hủy</button>
             <button onClick={() => name && amount && onSubmit({ name, amount: parseInt(amount), message })} className="flex-1 px-4 py-3 bg-red-600 text-white rounded-xl hover:bg-red-700 shadow-lg font-bold">Gửi</button>
           </div>
