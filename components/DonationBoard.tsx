@@ -66,7 +66,17 @@ const DonationBoard: React.FC<DonationBoardProps> = ({ donations, totalAmount, o
 
       {/* HEADER - Cố định ở trên */}
       <div className="bg-red-700 text-white p-5 text-center border-b-4 border-yellow-400 shadow-md flex-shrink-0">
-        <h2 className="text-lg font-bold uppercase tracking-widest mb-1">BẢNG VÀNG DANH DỰ</h2>
+        <h2 className="uppercase tracking-widest mb-1 text-center">
+          <span className="block text-xl font-extrabold text-white">
+          TRƯỜNG THPT NGUYỄN VĂN CỪ
+          </span>
+          <span className="block text-sm font-semibold text-white-200 mt-1">
+          STK MB-BANK: 999123456799
+          </span>
+          <span className="block text-lg font-bold text-yellow-300 mt-2">
+           BẢNG VÀNG DANH DỰ
+          </span>
+        </h2>
         <div className="text-3xl font-bold text-yellow-300">
           {totalAmount.toLocaleString()} <span className="text-sm text-white/80">VNĐ</span>
         </div>
