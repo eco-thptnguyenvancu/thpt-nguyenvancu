@@ -102,7 +102,7 @@ const YouTubeSection: React.FC<YouTubeSectionProps> = ({ url, onUrlChange }) => 
         <div className="marquee-container flex-1 overflow-hidden h-full flex items-center relative pl-24">
           <div className="animate-marquee-horizontal whitespace-nowrap absolute flex items-center gap-12 group-hover:pause-animation">
             <span className="text-white text-lg font-medium italic">
-               🌸 Trường THPT Nguyễn Văn Cừ xin chân thành cảm ơn sự đóng góp của quý phụ huynh, quý thầy cô, các em học sinh và các mạnh thường quân đã luôn đồng hành cùng quỹ văn nghệ Chào Xuân 2026. Kính chúc mọi người một năm mới An Khang Thịnh Vượng - Vạn Sự Như Ý! 🧧 🌸
+               🌸 Trường THPT Nguyễn Văn Cừ xin chân thành cảm ơn sự đóng góp của quý phụ huynh, quý thầy cô, các em học sinh và các mạnh thường quân đã luôn đồng hành cùng quỹ văn nghệ Chào Xuân 2026 và kỷ niệm 95 năm thành lập Đoàn TNCS Hồ Chí Minh. Kính chúc mọi người một năm mới An Khang Thịnh Vượng - Vạn Sự Như Ý! 🧧 🌸
             </span>
             <span className="text-white text-lg font-medium italic">
                🌸 Chúc mừng năm mới 2026 - Xuân Bính Ngọ - Vạn sự như ý - Tấn tài tấn lộc - Trường THPT Nguyễn Văn Cừ trân trọng cảm ơn! 🧧 🌸

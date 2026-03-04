@@ -23,7 +23,7 @@ const NewsTicker: React.FC<NewsTickerProps> = ({ donations }) => {
               </span>
             ))
           ) : (
-            <span className="text-xl text-gray-500 italic font-medium">Chào mừng bạn đến với đêm hội văn nghệ Chào Xuân 2026 trường THPT Nguyễn Văn Cừ!</span>
+            <span className="text-xl text-gray-500 italic font-medium">Chào mừng bạn đến với đêm hội văn nghệ Chào mừng kỷ niệm 95 năm thành lập Đoàn TNCS Hồ Chí Minh (26/3/1931-26/3/2026) của trường THPT Nguyễn Văn Cừ!</span>
           )}
         </div>
       </div>
