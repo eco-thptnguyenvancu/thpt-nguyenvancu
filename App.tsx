@@ -8,14 +8,12 @@ import { Donation } from './types';
 import { GoogleGenAI } from '@google/genai';
 
 const MOCK_DONATIONS: Donation[] = [
-  { id: '1', name: 'Lớp 12A1', amount: 500000, message: 'Chúc mừng năm mới!', timestamp: new Date() },
-  { id: '2', name: 'Ban Giám Hiệu', amount: 2000000, message: 'Chúc hội diễn thành công rực rỡ', timestamp: new Date() },
-  { id: '3', name: 'Đoàn Thanh Niên', amount: 1000000, message: 'Sức trẻ Nguyễn Văn Cừ!', timestamp: new Date() },
-  { id: '4', name: 'Cựu học sinh khóa 1999-2002', amount: 2000000, message: 'Mãi yêu mái trường xưa', timestamp: new Date() },
-  { id: '5', name: 'Phụ huynh em: Lê Tuấn Khanh lớp 10A1', amount: 300000, message: 'Gửi ngàn lời chúc', timestamp: new Date() },
-  { id: '6', name: 'Tập thể 11A1', amount: 1500000, message: 'Quyết thắng!', timestamp: new Date() },
-  { id: '7', name: 'Nhóm CĐV Bóng chuyền', amount: 5000000, message: 'Xuân ấm áp', timestamp: new Date() },
-];
+  { id: '1', name: 'Ngân hàng BIDV', amount: 1000000, message: 'Chúc mừng hội trại!', timestamp: new Date() },
+  { id: '2', name: 'Cty Bảo Hiểm Bảo Việt', amount: 500000, message: 'Chúc hội diễn thành công rực rỡ', timestamp: new Date() },
+  { id: '3', name: 'Trường THPT Trần Đại Nghĩa', amount: 500000, message: 'Sức trẻ Nguyễn Văn Cừ!', timestamp: new Date() },
+  { id: '4', name: 'Cựu hs Trần Như Khánh khóa 2004-2007', amount: 2000000, message: 'Mãi yêu mái trường xưa', timestamp: new Date() },
+  { id: '5', name: 'Phòng khám đa khoa Bảo Vân', amount: 500000, message: 'Gửi ngàn lời chúc', timestamp: new Date() },
+ ];
 
 const App: React.FC = () => {
   const [donations, setDonations] = useState<Donation[]>(MOCK_DONATIONS);
