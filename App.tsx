@@ -20,7 +20,7 @@ const MOCK_DONATIONS: Donation[] = [
 const App: React.FC = () => {
   const [donations, setDonations] = useState<Donation[]>(MOCK_DONATIONS);
   const [youtubeUrl, setYoutubeUrl] = useState('https://www.youtube.com/watch?v=idkIAmKz35s&t=246s');
-  const [aiGreeting, setAiGreeting] = useState<string>('Chào mừng quý thầy cô và các bạn học sinh đến với Hội Diễn Văn Nghệ Chào Xuân 2026 trường THPT Nguyễn Văn Cừ!');
+  const [aiGreeting, setAiGreeting] = useState<string>('Chào mừng quý thầy cô và các bạn học sinh đến với Hội Diễn Văn Nghệ trường THPT Nguyễn Văn Cừ! Chào mừng kỷ niệm 95 năm thành lập Đoàn TNCS Hồ Chí Minh (26/3/1931 - 26/3/2026)');
   const [isAddingDonation, setIsAddingDonation] = useState(false);
 
   const totalAmount = donations.reduce((sum, d) => sum + d.amount, 0);
@@ -30,7 +30,7 @@ const App: React.FC = () => {
       const ai = new GoogleGenAI({ apiKey: process.env.API_KEY || '' });
       const response = await ai.models.generateContent({
         model: 'gemini-3-flash-preview',
-        contents: `Hãy viết một câu chào mừng ngắn gọn, truyền cảm hứng và đậm chất Tết 2026 cho buổi biểu diễn văn nghệ của trường THPT Nguyễn Văn Cừ. Tổng số tiền ủng hộ hiện tại là ${totalAmount.toLocaleString()} VNĐ. Hãy nhắc tên trường trong câu chào.`,
+        contents: `Hãy viết một câu chào mừng ngắn gọn, truyền cảm hứng, tuổi trẻ Nguyễn Văn Cừ  tiên phong số - Kiến tạo tương lai cho buổi biểu diễn văn nghệ của trường THPT Nguyễn Văn Cừ. Tổng số tiền ủng hộ hiện tại là ${totalAmount.toLocaleString()} VNĐ. Hãy nhắc tên trường trong câu chào.`,
         config: {
           temperature: 0.8,
         }
@@ -124,7 +124,7 @@ const App: React.FC = () => {
           <div className="flex flex-col md:flex-row justify-between items-center gap-2 text-[10px] opacity-70 italic w-full">
             <p>© 2026 Ban Tổ Chức Văn Nghệ - THPT Nguyễn Văn Cừ</p>
             <div className="bg-red-800/10 px-3 py-1 rounded-lg not-italic">
-              <span className="font-semibold text-red-800">@ Copyright:</span> Lê Văn Tuấn
+              <span className="font-semibold text-red-800">© Copyright:</span> Lê Văn Tuấn
             </div>
           </div>
         </div>

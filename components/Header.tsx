@@ -44,17 +44,17 @@ const Header: React.FC = () => {
           </h1>
           
           <h1 className="text-xl md:text-4xl font-tet drop-shadow-2xl text-yellow-400 py-1">
-            HỘI DIỄN VĂN NGHỆ CHÀO XUÂN BÍNH NGỌ 2026
+            HỘI DIỄN VĂN NGHỆ CHÀO MỪNG KỶ NIỆM 95 NĂM THÀNH LẬP ĐOÀN THCS HỒ CHÍ MINH (26/3/1931-26/3/2026)
           </h1>
           
           <p className="text-[10px] md:text-sm font-light opacity-80 italic tracking-wide">
-            "Tết sum vầy - Đong đầy hạnh phúc"
+            "Tiên phong-Bản lĩnh-Đoàn kết-Sáng tạo-Phát triễn"
           </p>
         </div>
 
         <div className="mt-3 bg-red-800/60 backdrop-blur-md border border-yellow-400/50 px-4 py-1 rounded-full text-[10px] md:text-xs text-yellow-300 font-bold flex items-center gap-2 shadow-lg">
           <HoaMai size={12} />
-          AN KHANG - THỊNH VƯỢNG - VẠN SỰ NHƯ Ý!
+          TUỔI TRẺ NGUYỄN VĂN CỪ - TIÊN PHONG SỐ, KIẾN TẠO TƯƠNG LAI
           <HoaMai size={12} />
         </div>
       </div>
